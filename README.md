@@ -8,7 +8,7 @@
 $ docker run --rm -v $HOME/llvm:/llvm -it ytakanoster/llvm:13
 # cd /llvm
 # git clone https://github.com/ytakano/llvm_boot_camp.git
-# cd llvm_boot_camp
+# cd llvm_boot_camp/src
 # cmake .
 # make
 ```
