@@ -30,11 +30,6 @@ enum BinOps
     Eq, // equal
 };
 
-struct FunctionAST
-{
-    llvm::Function *func;
-};
-
 struct Expr
 {
     Expr() {}
@@ -293,7 +288,7 @@ llvm::Value *Generator::generate_var(VarAST &ast)
     auto it = variables_.find(ast.variable);
     if (it == variables_.end())
     {
-        std::cerr << "undefind variable: " << ast.variable << std::endl;
+        std::cerr << "undefined variable: " << ast.variable << std::endl;
         exit(1);
     }
 

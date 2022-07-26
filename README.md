@@ -46,7 +46,7 @@ endif:                                            ; preds = %else, %then
 ## Generate `example.s`
 
 ```text
-# llc example.ll
+# llc-13 example.ll
 # ls example.s
 ```
 
